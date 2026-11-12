@@ -1,0 +1,225 @@
+export const features = [
+  {
+    id: 'quest-system',
+    title: 'Quest System',
+    description: 'Embark on structured learning journeys where each quest combines lessons, quizzes, and coding challenges into epic RPG-style missions.',
+    icon: 'ri-sword-line',
+    color: 'text-emerald-400',
+    bgGlow: 'from-emerald-500/10 to-transparent',
+  },
+  {
+    id: 'coding-challenges',
+    title: 'Coding Challenges',
+    description: 'Tackle algorithmic and web development challenges in a VS Code-inspired workspace with live preview and instant validation.',
+    icon: 'ri-code-box-line',
+    color: 'text-cyan-400',
+    bgGlow: 'from-cyan-500/10 to-transparent',
+  },
+  {
+    id: 'quiz-battles',
+    title: 'Quiz Battles',
+    description: 'Engage in fast-paced quiz competitions with live rankings, combo multipliers, speed bonuses, and battle animations.',
+    icon: 'ri-flashlight-line',
+    color: 'text-amber-400',
+    bgGlow: 'from-amber-500/10 to-transparent',
+  },
+  {
+    id: 'xp-leveling',
+    title: 'XP & Leveling',
+    description: 'Earn experience points from every activity. Level up through six ranks from Novice to Legend and track your growth.',
+    icon: 'ri-bar-chart-grouped-line',
+    color: 'text-rose-400',
+    bgGlow: 'from-rose-500/10 to-transparent',
+  },
+  {
+    id: 'boss-quests',
+    title: 'Boss Quests',
+    description: 'Face milestone project missions. Build real-world projects like responsive websites, CRUD systems, and dashboards.',
+    icon: 'ri-fire-line',
+    color: 'text-orange-400',
+    bgGlow: 'from-orange-500/10 to-transparent',
+  },
+  {
+    id: 'leaderboards',
+    title: 'Category Leaderboards',
+    description: 'Compete on specialization-specific leaderboards. Track weekly, monthly, and all-time rankings across every skill domain.',
+    icon: 'ri-trophy-line',
+    color: 'text-yellow-400',
+    bgGlow: 'from-yellow-500/10 to-transparent',
+  },
+];
+
+export const howItWorksSteps = [
+  {
+    step: 1,
+    title: 'Start Learning',
+    description: 'Choose your specialization path and dive into curated lessons with videos, code examples, and interactive content.',
+    icon: 'ri-book-open-line',
+  },
+  {
+    step: 2,
+    title: 'Complete Lessons',
+    description: 'Progress through sequential lessons. Each completion earns XP and unlocks the next challenge in your journey.',
+    icon: 'ri-checkbox-circle-line',
+  },
+  {
+    step: 3,
+    title: 'Finish Quests',
+    description: 'Accept quests that bundle multiple objectives. The system tracks your progress automatically as you learn.',
+    icon: 'ri-map-pin-line',
+  },
+  {
+    step: 4,
+    title: 'Earn XP',
+    description: 'Gain experience points from lessons, quests, coding challenges, quiz battles, boss quests, and daily streaks.',
+    icon: 'ri-coin-line',
+  },
+  {
+    step: 5,
+    title: 'Level Up',
+    description: 'Accumulate XP to advance through six ranks: Novice, Apprentice, Challenger, Elite, Master, and Legend.',
+    icon: 'ri-arrow-up-circle-line',
+  },
+  {
+    step: 6,
+    title: 'Unlock Boss Quests',
+    description: 'Reach milestones to unlock epic boss quests. Complete real-world projects and earn legendary rewards.',
+    icon: 'ri-shield-star-line',
+  },
+];
+
+export const specializations = [
+  {
+    id: 'frontend',
+    title: 'Frontend Developer',
+    description: 'Master HTML, CSS, JavaScript, React, and responsive design. Build stunning user interfaces and interactive web experiences.',
+    icon: 'ri-layout-4-line',
+    color: 'from-emerald-500 to-teal-500',
+    stats: { lessons: 42, quests: 18, projects: 6 },
+  },
+  {
+    id: 'backend',
+    title: 'Backend Developer',
+    description: 'Learn server-side programming, APIs, authentication, and database integration. Power applications from behind the scenes.',
+    icon: 'ri-server-line',
+    color: 'from-cyan-500 to-blue-500',
+    stats: { lessons: 38, quests: 16, projects: 5 },
+  },
+  {
+    id: 'fullstack',
+    title: 'Full Stack Developer',
+    description: 'Combine frontend and backend expertise. Build complete applications from database to user interface independently.',
+    icon: 'ri-stack-line',
+    color: 'from-amber-500 to-orange-500',
+    stats: { lessons: 65, quests: 28, projects: 10 },
+  },
+  {
+    id: 'cybersecurity',
+    title: 'Cybersecurity',
+    description: 'Explore network security, ethical hacking, vulnerability assessment, and defense strategies to protect digital assets.',
+    icon: 'ri-shield-check-line',
+    color: 'from-rose-500 to-pink-500',
+    stats: { lessons: 35, quests: 14, projects: 4 },
+  },
+  {
+    id: 'database',
+    title: 'Database Administrator',
+    description: 'Design, implement, and manage database systems. Master SQL, NoSQL, data modeling, and query optimization techniques.',
+    icon: 'ri-database-2-line',
+    color: 'from-violet-500 to-purple-500',
+    stats: { lessons: 30, quests: 12, projects: 4 },
+  },
+  {
+    id: 'uiux',
+    title: 'UI/UX Designer',
+    description: 'Learn user research, wireframing, prototyping, and design systems. Create intuitive and beautiful digital experiences.',
+    icon: 'ri-palette-line',
+    color: 'from-fuchsia-500 to-pink-500',
+    stats: { lessons: 28, quests: 11, projects: 5 },
+  },
+];
+
+export const bossQuests = [
+  {
+    id: 'responsive-portfolio',
+    title: 'Responsive Portfolio Website',
+    description: 'Build a fully responsive personal portfolio with mobile-first design, CSS Grid, Flexbox, and smooth animations.',
+    difficulty: 2,
+    xpReward: 500,
+    deadline: '7 days',
+    requirements: ['Mobile responsive layout', 'CSS Grid & Flexbox', 'Smooth scroll animations', 'Contact form with validation'],
+    category: 'Frontend Developer',
+  },
+  {
+    id: 'crud-system',
+    title: 'Full CRUD Application',
+    description: 'Develop a complete Create-Read-Update-Delete system with REST API, database integration, and user authentication.',
+    difficulty: 3,
+    xpReward: 800,
+    deadline: '10 days',
+    requirements: ['RESTful API design', 'Database schema', 'User authentication', 'Form validation', 'Error handling'],
+    category: 'Full Stack Developer',
+  },
+  {
+    id: 'admin-dashboard',
+    title: 'Admin Dashboard',
+    description: 'Create a data visualization dashboard with charts, tables, filters, and real-time analytics components.',
+    difficulty: 3,
+    xpReward: 750,
+    deadline: '8 days',
+    requirements: ['Data visualization charts', 'Sortable data tables', 'Search and filters', 'Responsive sidebar layout'],
+    category: 'Frontend Developer',
+  },
+  {
+    id: 'mini-web-app',
+    title: 'Mini Web Application',
+    description: 'Build a complete single-page application with state management, routing, and third-party API integration.',
+    difficulty: 4,
+    xpReward: 1000,
+    deadline: '14 days',
+    requirements: ['SPA architecture', 'State management', 'API integration', 'Routing', 'Error boundaries'],
+    category: 'Full Stack Developer',
+  },
+];
+
+export const platformPreviews = [
+  {
+    id: 'dashboard',
+    title: 'Student Dashboard',
+    description: 'Your command center with XP progress, active quests, skill charts, and performance analytics all in one place.',
+    image: 'https://readdy.ai/api/search-image?query=modern%20dark%20theme%20student%20dashboard%20UI%20design%20with%20gamification%20elements%20XP%20bars%20level%20indicators%20charts%20cards%20neon%20emerald%20accent%20colors%20glassmorphism%20effect%20clean%20minimalist%20interface&width=800&height=500&seq=1&orientation=landscape',
+  },
+  {
+    id: 'coding',
+    title: 'Coding Challenge System',
+    description: 'VS Code-inspired workspace with split-screen editor, live preview, file explorer, and instant test validation.',
+    image: 'https://readdy.ai/api/search-image?query=dark%20theme%20code%20editor%20IDE%20interface%20with%20syntax%20highlighting%20multiple%20panels%20file%20explorer%20live%20preview%20web%20development%20workspace%20neon%20green%20accent%20modern%20UI%20design&width=800&height=500&seq=2&orientation=landscape',
+  },
+  {
+    id: 'quest',
+    title: 'Quest Hub',
+    description: 'Browse, filter, and embark on RPG-style quests. Track objectives, earn rewards, and progress through your adventure.',
+    image: 'https://readdy.ai/api/search-image?query=dark%20theme%20quest%20hub%20UI%20design%20RPG%20game%20style%20cards%20with%20mission%20badges%20progress%20bars%20XP%20rewards%20neon%20emerald%20accent%20glassmorphism%20cards%20futuristic%20interface&width=800&height=500&seq=3&orientation=landscape',
+  },
+  {
+    id: 'leaderboard',
+    title: 'Leaderboards',
+    description: 'Compete across specialization categories with weekly and monthly rankings. See your standing among peers.',
+    image: 'https://readdy.ai/api/search-image?query=dark%20theme%20leaderboard%20UI%20design%20ranking%20table%20with%20player%20avatars%20XP%20scores%20gold%20silver%20bronze%20badges%20neon%20accent%20colors%20glassmorphism%20clean%20modern%20interface&width=800&height=500&seq=4&orientation=landscape',
+  },
+  {
+    id: 'lesson',
+    title: 'Lesson Viewer',
+    description: 'Immersive lesson experience with syntax-highlighted code blocks, embedded videos, progress tracking, and bookmarks.',
+    image: 'https://readdy.ai/api/search-image?query=dark%20theme%20online%20lesson%20viewer%20UI%20with%20code%20syntax%20highlighting%20video%20player%20sidebar%20navigation%20progress%20bar%20neon%20emerald%20accent%20educational%20platform%20interface&width=800&height=500&seq=5&orientation=landscape',
+  },
+];
+
+export const ranks = [
+  { name: 'Novice', level: '1-5', color: '#94a3b8' },
+  { name: 'Apprentice', level: '6-10', color: '#34d399' },
+  { name: 'Challenger', level: '11-20', color: '#06b6d4' },
+  { name: 'Elite', level: '21-30', color: '#f59e0b' },
+  { name: 'Master', level: '31-40', color: '#f43f5e' },
+  { name: 'Legend', level: '41+', color: '#a855f7' },
+];

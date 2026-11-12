@@ -1,0 +1,11 @@
+# Node dependencies (lahat ng node_modules kahit saang subfolder)
+**/node_modules/
+
+# Environment variables (mga API keys at DB secrets)
+**/.env
+**/.env.*
+!**/.env.example
+
+# Build / Output folders
+**/dist/
+**/build/git status
